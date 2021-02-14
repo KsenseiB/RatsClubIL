@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="heb" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> בונדינג ואילוף</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        main img {
+            max-height: 200px;
+            display: inline-block;
+            max-width: 100%;
+            object-fit: cover;
+            flex-grow: 2;
+            margin: 0.5rem;
+            cursor: pointer;
+        }
+
+        .gallery {
+            max-width: 85%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #lightbox {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+        }
+
+        #lightbox.active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0"
+        nonce="VLtJ3uo7"></script>
+
+
+    <header>
+        <div class="hero-image">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">דף ראשי</a></li>
+                <li><a href="joinCommunity.html">הצטרף לקהילה!</a></li>
+                <li><a href="#">מדריכי גידול</a>
+                    <ul class="dropdown">
+                        <li><a href="bonding.html">הכירות בינכם לחולדות
+                                (bonding)</a></li>
+                        <li><a href="nutrition.html">תזונה נכונה</a></li>
+                        <li><a href="cageAccessories.html">כלובים ואביזרים</a>
+                        </li>
+                        <li><a href="#">הכירות בין חולדות ותיקות לחדשות</a></li>
+                        <li><a href="#">הכרות בין חולדות לחיות אחרות</a></li>
+                        <li><a href="raisingSphinx.html">מדריך גידול חולדות
+                                ספינקס</a></li>
+                        <li><a href="ratsLabs.html">חולדות וניסויים בבע"ח</a>
+                        </li>
+                        <li><a href="orphans.html">טיפול בגור יתום</a></li>
+                        <li><a href="didUKnow.html">הידעת?</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">פינת ליטוף</a></li>
+                <li><a href="vets.html">וטרינרים ומקרי חירום</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h2>חולדונים שמצאו בית חם</h2>
+        <p>התמונות לקוחות מקבוצת הגידול חולדות, כולן יצאו ממעבדות ניסויים, ניצלו
+            מהמתה ומצאו אהבה &#x2764;</p>
+            <p>להגדלה לחצו על התמונה וליציאה בכל מקום מסביב לתמונה</p>
+        <div class="gallery flex">
+
+            <img src="https://i.ibb.co/LCs4V8F/AlolDor.jpg" alt="Alon Dror">
+            <img src="https://i.ibb.co/7pRqzcj/AlolDor2.jpg" alt="Alon Dror">
+            <img src="https://i.ibb.co/ZLrQz5M/AlolDor3.jpg" alt="Alon Dror">
+            <img src="https://i.ibb.co/0YP0RSp/Enav-Marcus.jpg" alt="Enav Marcus">
+            <img src="https://i.ibb.co/F5xH2Jh/Enav-Marcus2.jpg" alt="Enav Marcus">
+            <img src="https://i.ibb.co/wNJBKXL/Enav-Marcus3.jpg" alt="Enav Marcus">
+            <img src="https://i.ibb.co/CPCBtks/Hilit-Vardin.jpg" alt="Hilit Vardin">
+            <img src="https://i.ibb.co/z7GyjJq/LeeAmado.jpg" alt="Lee Amado">
+            <img src="https://i.ibb.co/B6xKbFS/Uriel-Frizer.jpg" alt="Uriel Frizer">
+            <img src="https://i.ibb.co/CwBMjVj/Uriel-Frizer2.jpg" alt="Uriel Frizer">
+            <img src="https://i.ibb.co/jVNnXjc/Uriel-Frizer3.jpg" alt="Uriel Frizer">
+            <img src="https://i.ibb.co/84f2mp5/Uriel-Frizer4.jpg" alt="Uriel Frizer">
+            <img src="https://i.ibb.co/56ybWQD/Yan-Yegorov.jpg" alt="Yan Yegorov">
+
+        </div>
+    </main>
+     <footer>
+        <div class="main-list">
+
+
+            <ul>
+                <li><a href="index.html">דף ראשי</a></li>
+                <li><a href="joinCommunity.html">הצטרף לקהילה!</a></li>
+                <li><a href="#">מדריך גידול מלא</a>
+                <li><a href="gallery.html">גלריה</a></li>
+                <li><a href="vets.html">וטרינרים ומקרי חירום</a></li>
+                <li><a href="ratsLabs.html">חולדות וניסויים בבע"ח</a>
+                </li>
+            </ul>
+        </div>
+        <a href="https://www.facebook.com/fromlabtoloverats"><img src="https://i.ibb.co/FqXk8V1/like-To-Cuddle.jpg" alt=""></a>
+        <div class="secondary-list">
+            <ul>
+                <li><a href="bonding.html">הכירות בינכם לחולדות
+                        (bonding)</a></li>
+                <li><a href="nutrition.html">תזונה נכונה</a></li>
+                <li><a href="cageAccessories.html">כלובים ואביזרים</a>
+                </li>
+                <li><a href="#">הכרות בין חולדות ותיקות לחדשות</a></li>
+                <li><a href="#">הכרות בין חולדות לחיות אחרות</a></li>
+                <li><a href="raisingSphinx.html">מדריך גידול חולדות
+                        ספינקס</a></li>
+                <li><a href="orphans.html">טיפול בגור יתום</a></li>
+            </ul>
+        </div>
+
+
+
+    </footer>
+    <script>
+        const lightbox = document.createElement('div');
+        lightbox.id = 'lightbox';
+        document.body.appendChild(lightbox);
+        const images = document.querySelectorAll('img');
+        images.forEach((image) => {
+            image.addEventListener('click', (e) => {
+                lightbox.classList.add('active');
+                const img = document.createElement('img');
+                // set the enlarged img src same as the clicked one
+                img.src = image.src;
+                // whn the lightbox has a child
+                while (lightbox.firstChild)
+                {
+                    lightbox.removeChild(lightbox.firstChild);
+                }
+                // and then push a new one into the div
+                lightbox.appendChild(img);
+            });
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            // if we click on smthing that's not the lightbox=e.target, what we click on !== is not equal to e.currentTarget (what we added the event listener to=lightbox) -> return
+            if (e.target !== e.currentTarget) return;
+            lightbox.classList.remove('active');
+        });
+    </script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
