@@ -253,6 +253,7 @@ footer {
   .built-by {
     grid-area: built-by;
     font-size: small;
+    display: block;
   }
 
 footer ul {
