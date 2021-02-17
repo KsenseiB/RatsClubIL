@@ -171,7 +171,7 @@ header img {
 }
 
 main {
-  padding: 3rem;
+  padding: 0 3rem;
   text-align: justify;
   font-size: 1.2rem;
   transform: translateY(-100px);
@@ -243,20 +243,19 @@ footer {
     'secondary-list adopt-banner main-list'
     'secondary-list built-by main-list';
 }
-  .secondary-list {
-    grid-area: secondary-list;
-  }
-  .main-list {
-    grid-area: main-list;
-  }
-  .adopt-banner {
-    grid-area: adopt-banner;
-  }
-  .built-by {
-    grid-area: built-by;
-    font-size: small;
-    display: block;
-  }
+.secondary-list {
+  grid-area: secondary-list;
+}
+.main-list {
+  grid-area: main-list;
+}
+.adopt-banner {
+  grid-area: adopt-banner;
+}
+.built-by {
+  grid-area: built-by;
+  font-size: small;
+}
 
 footer ul {
   list-style: none;
@@ -268,4 +267,34 @@ footer a:hover {
 footer img {
   height: 300px;
   margin-top: 20px;
+}
+
+/*GALLERY*/
+
+.gallery {
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
 }
