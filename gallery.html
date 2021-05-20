@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>גלריה</title>
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         main img {
             max-height: 200px;
@@ -20,16 +18,12 @@
             margin: 0.5rem;
             cursor: pointer;
         }
-
-
     </style>
 </head>
 
 <body>
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous"
-        src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0"
-        nonce="VLtJ3uo7"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="VLtJ3uo7"></script>
 
 
     <header>
@@ -57,16 +51,15 @@
                     </ul>
                 </li>
                 <li><a href="gallery.html">פינת ליטוף</a></li>
-                <li><a href="vets.html">וטרינרים ומקרי חירום</a></li>
+                <li><a href="vets.html">וטרינרים</a></li>
             </ul>
         </div>
     </header>
 
     <main>
         <h2>חולדונים שמצאו בית חם</h2>
-        <p>התמונות לקוחות מקבוצת הגידול חולדות, כולן יצאו ממעבדות ניסויים, ניצלו
-            מהמתה ומצאו אהבה &#x2764;</p>
-            <p>להגדלה לחצו על התמונה וליציאה בכל מקום מסביב לתמונה</p>
+        <p>התמונות לקוחות מקבוצת הגידול חולדות, כולן יצאו ממעבדות ניסויים, ניצלו מהמתה ומצאו אהבה &#x2764;</p>
+        <p>להגדלה לחצו על התמונה וליציאה בכל מקום מסביב לתמונה</p>
         <div class="gallery flex">
 
             <img src="https://i.ibb.co/LCs4V8F/AlolDor.jpg" alt="Alon Dror">
@@ -84,16 +77,16 @@
             <img src="https://i.ibb.co/56ybWQD/Yan-Yegorov.jpg" alt="Yan Yegorov">
         </div>
     </main>
-     <footer>
+    <footer>
         <div class="main-list">
             <ul>
                 <li><a href="index.html">דף ראשי</a></li>
                 <li><a href="joinCommunity.html">הצטרף לקהילה!</a></li>
                 <li><a href="fullGuide.html">מדריך גידול מלא</a>
-                <li><a href="gallery.html">גלריה</a></li>
-                <li><a href="vets.html">וטרינרים ומקרי חירום</a></li>
-                <li><a href="ratsLabs.html">חולדות וניסויים בבע"ח</a>
-                </li>
+                    <li><a href="gallery.html">גלריה</a></li>
+                    <li><a href="vets.html">וטרינרים</a></li>
+                    <li><a href="ratsLabs.html">חולדות וניסויים בבע"ח</a>
+                    </li>
             </ul>
         </div>
         <a class="adopt-banner" href="https://www.facebook.com/fromlabtoloverats"><img src="https://i.ibb.co/FqXk8V1/like-To-Cuddle.jpg" alt=""></a>
@@ -112,9 +105,9 @@
                 <li><a href="orphans.html">טיפול בגור יתום</a></li>
             </ul>
         </div>
-<div class="built-by">
-    <p>האתר נבנה ע"י קסניה &#x2764;</p>
-</div>
+        <div class="built-by">
+            <p>האתר נבנה ע"י קסניה &#x2764;</p>
+        </div>
     </footer>
 
     <script>
@@ -129,8 +122,7 @@
                 // set the enlarged img src same as the clicked one
                 img.src = image.src;
                 // whn the lightbox has a child
-                while (lightbox.firstChild)
-                {
+                while (lightbox.firstChild) {
                     lightbox.removeChild(lightbox.firstChild);
                 }
                 // and then push a new one into the div
