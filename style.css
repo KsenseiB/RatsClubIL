@@ -56,27 +56,27 @@ body {
     color: var(--text);
     width: 95vw;
     text-transform: uppercase;
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
 .nav>ul>li {
     position: relative;
     cursor: pointer;
-    font-size: 1.2rem;
     letter-spacing: 1.8px;
     /* float: right; */
     width: 170px;
-    height: 50px;
+    /* height: 50px; */
     /* line-height: 25px; */
-    padding-top: 20px;
+    padding: 20px;
 }
 
 .dropdown {
+    font-size: 1.2rem;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 0;
 }
 
 .dropdown li {
@@ -85,6 +85,7 @@ body {
     border-width: 1px;
     border-color: var(--darkest);
     display: none;
+    padding: 5px;
 }
 
 .dropdown li:hover {
